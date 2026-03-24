@@ -1,0 +1,21 @@
+{
+  "name": "btc-eth-trading-bot",
+  "version": "1.0.0",
+  "description": "BTC/ETH trading bot with technical analysis - Paper & Live trading",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "backtest": "node src/backtester.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.3",
+    "technicalindicators": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
