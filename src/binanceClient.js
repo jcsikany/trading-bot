@@ -2,12 +2,12 @@ const axios = require('axios');
 const crypto = require('crypto');
 
 // Siempre usamos precios reales aunque estemos en paper trading
-const MARKET_URL = 'https://api.binance.com';
+const MARKET_URL = 'https://api1.binance.com';
 
 // Para órdenes reales usamos la URL correspondiente
 const TRADE_URL = process.env.PAPER_TRADING === 'true'
   ? 'https://testnet.binance.vision'  // Testnet para pruebas
-  : 'https://api.binance.com';        // Live para dinero real
+  : 'https://api1.binance.com';        // Live para dinero real
 
 // Rate limiting básico: Binance permite 1200 requests/minuto
 const requestQueue = [];
