@@ -13,8 +13,8 @@ const WEIGHTS = {
 };
 
 // Umbrales para disparar operaciones
-const BUY_THRESHOLD  = 0.55;  // 55% para comprar (bajado para backtest)
-const SELL_THRESHOLD = 0.50;  // 50% para vender (bajado para backtest)
+const BUY_THRESHOLD  = 0.70;  // 70% para comprar
+const SELL_THRESHOLD = 0.65;  // 65% para vender (más sensible)
 
 // ─────────────────────────────────────────
 // Scoring individual por indicador
